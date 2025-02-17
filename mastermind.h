@@ -10,8 +10,8 @@
 * global variable decleared here, updated in check_guess
 * function
 */
-int num_well_placed;
-int num_miss_placed;
+extern int num_well_placed;
+extern int num_miss_placed;
 
 
 // functions prototypes
