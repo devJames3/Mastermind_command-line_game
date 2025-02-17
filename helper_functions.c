@@ -6,8 +6,8 @@
 
 
  //variables of type int decleared in the header mastermind.h
-int num_well_placed = 0;
-int num_miss_placed = 0;
+int num_well_placed;
+int num_miss_placed;
 
 /*
 ** generate_code -- function fills and int buffer with
@@ -165,7 +165,9 @@ int check_input(char* buff, int guess[CODE_LEN], int copy_size){
 
 
 void check_guess(int guess[CODE_LEN], int code[CODE_LEN]) {
-
+ 
+    num_well_placed = 0;
+    num_miss_placed = 0;
     for (int i = 0; i < CODE_LEN; i++) {
         if (guess[i] == code[i]) {
             num_well_placed++;
