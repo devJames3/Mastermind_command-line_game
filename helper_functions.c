@@ -168,6 +168,7 @@ void check_guess(int guess[CODE_LEN], int code[CODE_LEN]) {
  
     num_well_placed = 0;
     num_miss_placed = 0;
+ 
     for (int i = 0; i < CODE_LEN; i++) {
         if (guess[i] == code[i]) {
             num_well_placed++;
